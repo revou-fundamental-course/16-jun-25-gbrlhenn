@@ -87,3 +87,67 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Website Kalkulator Segitiga</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Gabriel Sistem</h1>
+    <p>Hai Sobat, Selamat datang di Gabriel Sistem :)<br>
+    Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+
+    <hr>
+
+    <!-- Luas Segitiga -->
+    <div class="section">
+      <h2>Luas Segitiga</h2>
+      <img src="img/segitiga.jpg" alt="Gambar Segitiga" width="180">
+
+      <p><strong>Rumus Luas Segitiga:</strong> L = 1/2 × a × t</p>
+      <p>Di mana:<br> L = Luas<br> a = Panjang Alas<br> t = Tinggi</p>
+
+      <h3>Hitung Luas Segitiga</h3>
+      <input type="number" id="alas" placeholder="Nilai Alas">
+      <input type="number" id="tinggi" placeholder="Nilai Tinggi">
+      <div class="buttons">
+        <button onclick="hitungLuas()">Hitung</button>
+        <button onclick="resetLuas()">Reset</button>
+      </div>
+      <p id="hasilLuas"></p>
+    </div>
+
+    <hr>
+
+    <!-- Keliling Segitiga -->
+    <div class="section">
+      <h2>Keliling Segitiga</h2>
+      <img src="img/segitiga.jpg" alt="Gambar Segitiga" width="180">
+
+      <p><strong>Rumus Keliling Segitiga:</strong> K = S1 + S2 + S3</p>
+      <p>Di mana:<br> K = Keliling<br> S1 = Sisi A<br> S2 = Sisi B<br> S3 = Sisi C</p>
+
+      <h3>Hitung Keliling Segitiga</h3>
+      <input type="number" id="sisi1" placeholder="Sisi A">
+      <input type="number" id="sisi2" placeholder="Sisi B">
+      <input type="number" id="sisi3" placeholder="Sisi C">
+      <div class="buttons">
+        <button onclick="hitungKeliling()">Hitung</button>
+        <button onclick="resetKeliling()">Reset</button>
+      </div>
+      <p id="hasilKeliling"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
